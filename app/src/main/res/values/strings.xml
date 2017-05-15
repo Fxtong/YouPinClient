@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">优品</string>
+    <string name="app_home_title">首页</string>
+    <string name="loading_failure">加载失败,点击重试</string>
+    <string name="menu_search_hint">搜索家居美图、商品等</string>
+
+
+    <string name="discover_kitchenware_title">厨房用品</string>
+    <string name="discover_tidy_title">整理收纳</string>
+    <string name="discover_lamp_title">精选灯具</string>
+    <string name="discover_fitment_title">优质家具</string>
+
+    <string name="discover_item_1">精选杂志</string>
+    <string name="programa_item_1">达人专栏</string>
+    <string name="programa_head_more">查看更多</string>
+
+    <string name="fab_item1">写文章</string>
+    <string name="fab_item2">晒图</string>
+    <string name="register_title">注册</string>
+    <string name="phone_hint">请输入手机号</string>
+    <string name="paw_hint">设置密码</string>
+    <string name="progress_text">注册</string>
+    <string name="progress_complete">注册成功</string>
+    <string name="progress_error">注册失败</string>
+    <string name="login_title">登录</string>
+    <string name="login_phone_hint">手机</string>
+    <string name="login_paw_hint">密码</string>
+    <string name="login_progress_text">登录</string>
+    <string name="login_progress_complete">登录成功</string>
+    <string name="login_re">立即注册</string>
+    <string name="my_focus">关注</string>
+    <string name="my_name">新用户</string>
+    <string name="my_focus_number">0</string>
+    <string name="my_fans">粉丝</string>
+    <string name="my_fans_number">0</string>
+    <string name="my_signature">该用户好懒</string>
+    <string name="my_integral">我的积分</string>
+    <string name="my_collect">我的收藏</string>
+    <string name="my_scenario_number">0</string>
+    <string name="my_scenario">场景</string>
+    <string name="my_item_number">0</string>
+    <string name="my_item">单品</string>
+    <string name="my_article_number">0</string>
+    <string name="my_article">文章</string>
+    <string name="my_invitation_number">0</string>
+    <string name="my_invitation">帖子</string>
+    <string name="my_publish_collect">我的发表</string>
+    <string name="my_publish_scenario_number">0</string>
+    <string name="my_publish_scenario">场景</string>
+    <string name="my_publish_item_number">0</string>
+    <string name="my_publish_item">单品</string>
+    <string name="my_publish_article_number">0</string>
+    <string name="my_publish_article">文章</string>
+    <string name="my_publish_invitation_number">0</string>
+    <string name="my_publish_invitation">帖子</string>
+
+
+</resources>
+

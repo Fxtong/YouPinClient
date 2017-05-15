@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.online.youpinclient.ui.activity.RegisterActivity">
+    <android.support.v7.widget.Toolbar
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:id="@+id/register_toolbar"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ToolbarStyle"
+        android:background="@color/colorPrimaryCopy"
+        android:layout_marginTop="24dp"
+        app:layout_constraintHorizontal_bias="0.0">
+
+        <TextView
+            android:layout_margin="0dp"
+            android:id="@+id/register_title"
+            style="@style/ToolBar.Title"
+            android:textColor="@color/colorApp"
+            android:text="@string/register_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        </android.support.v7.widget.Toolbar>
+    <EditText
+        android:textColor="@color/color_card_name"
+        android:drawablePadding="10dp"
+        android:drawableBottom="@drawable/shape_et_bottom_line"
+        android:inputType="phone"
+        android:background="@null"
+        android:maxLength="11"
+        android:drawableStart="@drawable/ic_phone"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/et_phone"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintTop_toBottomOf="@+id/register_toolbar"
+        android:hint="@string/phone_hint"
+        android:textCursorDrawable="@null"
+        android:drawableLeft="@drawable/ic_phone" />
+    <EditText
+        android:maxLength="15"
+        android:inputType="textPassword"
+        android:textCursorDrawable="@null"
+        android:textColor="@color/color_card_name"
+        android:drawablePadding="10dp"
+        android:hint="@string/paw_hint"
+        android:drawableBottom="@drawable/shape_et_bottom_line"
+        android:background="@null"
+        android:drawableStart="@drawable/ic_password"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/et_paw"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/et_phone"
+        android:drawableLeft="@drawable/ic_password" />
+
+    <com.dd.CircularProgressButton
+        android:textColor="@color/cpb_white"
+        android:layout_margin="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/confirm_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cpb_cornerRadius="10dp"
+        android:layout_marginTop="24dp"
+        app:cpb_textIdle="@string/progress_text"
+        app:cpb_colorIndicatorBackground="@color/color_progress"
+        app:cpb_colorIndicator="@color/cpb_white"
+        app:cpb_textComplete="@string/progress_complete"
+        app:cpb_textError="@string/progress_error"
+        app:cpb_selectorIdle="@color/color_progress"
+        app:layout_constraintTop_toBottomOf="@+id/et_paw" />
+
+
+</android.support.constraint.ConstraintLayout>
+</layout>

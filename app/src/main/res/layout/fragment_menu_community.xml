@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="fab"
+            type="com.online.youpinclient.ui.fragment.CommunityFragment.FabPresenter"/>
+    </data>
+    <LinearLayout
+        android:id="@+id/community_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/community_tab"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:tabBackground="@color/color_tab_background"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/color_tab_indicator"
+            app:tabMode="fixed"
+            app:tabTextColor="@color/color_tab_text" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/community_tab_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+
+        <include layout="@layout/floating_layout" app:fab="@{fab}"/>
+        </FrameLayout>
+
+
+    </LinearLayout>
+</layout>

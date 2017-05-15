@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BannerLayout">
+        <!--停留时间-->
+        <attr name="delay_time" format="integer" />
+        <!--滑动时间-->
+        <attr name="scroll_time" format="integer" />
+        <!--是否播放-->
+        <attr name="is_auto_play" format="boolean" />
+        <!--底部文字背景-->
+        <attr name="title_background" format="color|reference" />
+        <!--底部提示文字颜色-->
+        <attr name="title_textcolor" format="color" />
+        <!--底部提示文字大小-->
+        <attr name="title_textsize" format="dimension" />
+        <!--文字高度-->
+        <attr name="title_height" format="dimension" />
+        <!--指示器宽度-->
+        <attr name="indicator_width" format="dimension" />
+        <!--指示器高度-->
+        <attr name="indicator_height" format="dimension" />
+        <!--指示器边界-->
+        <attr name="indicator_margin" format="dimension" />
+        <!--指示器选中效果-->
+        <attr name="indicator_drawable_selected" format="reference" />
+        <!--指示器取消效果-->
+        <attr name="indicator_drawable_unselected" format="reference" />
+        <!--布局-->
+        <attr name="layout_id" format="reference"/>
+        <!--图片滑动效果-->
+        <attr name="image_scale_type" format="enum">
+            <enum name="center" value="0" />
+            <enum name="center_crop" value="1" />
+            <enum name="center_inside" value="2" />
+            <enum name="fit_center" value="3" />
+            <enum name="fit_end" value="4" />
+            <enum name="fit_start" value="5" />
+            <enum name="fit_xy" value="6" />
+            <enum name="matrix" value="7" />
+        </attr>
+        <!--<attr name="indicator_animator" format="reference" />-->
+        <!--<attr name="indicator_animator_reverse" format="reference" />-->
+    </declare-styleable>
+</resources>

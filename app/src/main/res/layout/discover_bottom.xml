@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <!--会变成fragment-->
+        <LinearLayout
+            android:background="#ffffff"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_margin="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <Spinner
+                    android:background="@color/colorApp"
+                    android:layout_width="3dp"
+                    android:layout_height="15dp"
+                    />
+                <TextView
+                    android:textColor="@color/color_discover_title"
+                    android:textScaleX="1.2"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="6dp"
+                    android:id="@+id/discover_item_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/discover_item_1" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:src="@drawable/journal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <LinearLayout
+                    android:background="@drawable/ic_triangle"
+                    android:orientation="horizontal"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <ImageView
+                        android:src="@drawable/ic_picture"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+
+                    <TextView
+                        android:layout_marginLeft="2dp"
+                        android:text="9"
+                        android:textColor="#ffffff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:gravity="center"
+                        />
+                    </LinearLayout>
+                </LinearLayout>
+            <!--<android.support.v4.view.ViewPager
+                android:id="@+id/discover_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v4.view.ViewPager>-->
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+        
+</layout>
